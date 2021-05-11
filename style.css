@@ -22,6 +22,19 @@ body {
   padding: 30px;
 }
 
+.bg_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bg_bottom {
+  position: absolute;
+  height: 80%;
+  bottom: 0;
+  right: 0;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -153,6 +166,17 @@ body {
     padding: 30px;
   }
 
+  .bg_top {
+    src: url("images/bg-pattern-top-mobile.svg");
+    width: 100%;
+  }
+
+  .bg_bottom {
+    src: url("images/bg-pattern-bottom-mobile.svg");
+    height: auto;
+    width: 100%;
+  }
+
   .wrapper {
     display: block;
   }
@@ -217,7 +241,7 @@ body {
   .rating {
     width: 100%;
     margin: 8px 0;
-    padding: 15px ;
+    padding: 15px;
     display: block;
     position: static;
     text-align: center;
